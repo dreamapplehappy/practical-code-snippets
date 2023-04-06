@@ -9,7 +9,7 @@ export default function (selector) {
         const firstFile = selectedFiles[0]
         if (firstFile) {
           const fr = new FileReader()
-          fr.onload = function (e) {
+          fr.onload = function () {
             resolve(fr.result)
           }
           fr.readAsDataURL(firstFile)
