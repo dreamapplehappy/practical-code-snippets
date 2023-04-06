@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert-image-to-base64</title>
+</head>
+<body>
+<script type="module">
+    import fromUrl from "./from-url.js";
+    // 从 url 转换为 base64
+    fromUrl('https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg')
+    .then(console.log, () => {})
+</script>
+</body>
+</html>
